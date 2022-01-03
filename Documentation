@@ -1,0 +1,6 @@
+    The purpose of this laboratory is to find an N coloring of a graph using threads.
+The input consists of a series of inter-connected nodes, representing an edge
+between the two nodes.
+    Using a 'first fit' method, the algorithm should first establish a possible coloring, then
+using a validator, it could possibly change the initial coloring if it finds it to be invalid.
+    There are several threads trying do do the coloring, their number can be specified as a constant.
