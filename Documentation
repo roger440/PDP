@@ -4,3 +4,9 @@ between the two nodes.
     Using a 'first fit' method, the algorithm should first establish a possible coloring, then
 using a validator, it could possibly change the initial coloring if it finds it to be invalid.
     There are several threads trying do do the coloring, their number can be specified as a constant.
+
+Runs :
+    test2, 2 threads, 0.037 s
+    test2, 1 thread, 0.042 s
+    test1, 2 threads, 0.040 s
+    test3, 3 threads, 0.054 s

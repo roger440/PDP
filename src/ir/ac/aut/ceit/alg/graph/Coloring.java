@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Coloring {
-    private int threadCount = 2;
+    private int threadCount = 3;
     private ArrayList<Thread> threadArray = new ArrayList<>();
 
     /**
