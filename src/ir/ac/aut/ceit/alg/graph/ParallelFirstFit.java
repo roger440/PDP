@@ -4,15 +4,9 @@ package ir.ac.aut.ceit.alg.graph;
 import java.util.ArrayList;
 
 public class ParallelFirstFit extends ParallelGraph implements Runnable {
-
-
     public ParallelFirstFit(Graph graph, int startVertex, int endVertex) {
         super(graph,startVertex,endVertex);
     }
-
-    /**
-     * run FF
-     */
 
     @Override
     public void run() {
@@ -21,15 +15,8 @@ public class ParallelFirstFit extends ParallelGraph implements Runnable {
             int color = getLowestAvailableColor(unPossibleList);
             graph.doColoring(i,color);
         }
-        // graph.printColoring();
     }
 
-
-    /**
-     * build a impossible list of colors
-     * @param firstNeigh a neighbour of a vertex
-     * @return
-     */
     private ArrayList<Integer> buildImpossibleList(ListNode firstNeigh) {
         ArrayList<Integer> imPossibleList = new ArrayList<>();
         ListNode neigh = firstNeigh;
@@ -42,5 +29,4 @@ public class ParallelFirstFit extends ParallelGraph implements Runnable {
         }
         return imPossibleList;
     }
-
 }
